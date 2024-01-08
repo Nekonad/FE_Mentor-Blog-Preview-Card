@@ -1,0 +1,184 @@
+/* - White: hsl(0, 0%, 100%)
+- Grey: hsl(0, 0%, 50%)
+- Black: hsl(0, 0%, 7%) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 3000px;
+  -webkit-user-select: none;
+  font-family: Figtree, arial;
+  font-size: 16px;
+  min-height: 100%;
+  background-color: hsl(47, 88%, 63%);
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.card {
+  width: 376px;
+  height: 480px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  border: 1px solid #000;
+  box-shadow: 10px 10px #000;
+}
+
+.img img {
+  width: 334px;
+  height: 200px;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.img {
+  width: 90%;
+  height: 40%;
+  margin: 20px 0px 15px 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  margin: 0px 0px 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(47, 88%, 63%);
+  width: 90px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.btn-text {
+  font-weight: 800;
+}
+
+.btn:hover {
+  color: hsl(47, 88%, 63%);
+  background-color: hsl(0, 0%, 7%);
+}
+
+.header {
+  margin: 10px 0px 10px 20px;
+  font-size: 24px;
+  font-weight: 800;
+}
+.text-1,
+.text-2 {
+  margin: 5px 0px 0px 20px;
+}
+
+.text-1 {
+  color: hsl(0, 0%, 7%);
+}
+.text-2 {
+  color: hsl(0, 0%, 50%);
+}
+
+.footer {
+  display: flex;
+  margin: 20px 0px 0px 20px;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+}
+
+.container-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.container-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.text-fo {
+  justify-content: center;
+  font-weight: 800;
+}
+
+.card:active {
+  box-shadow: none;
+  transform: translateY(4px);
+  transition: all ease-in 0.05s;
+}
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #999;
+  }
+  .container {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    border-radius: 20px;
+    width: 100%;
+    height: 70%;
+  }
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img img {
+    width: 100%;
+    height: 100%;
+  }
+  .btn {
+    margin-bottom: 10px;
+    font-size: small;
+    width: 4rem;
+    height: 1.4rem;
+  }
+  .btn-text {
+    font-size: smaller;
+  }
+  .header {
+    margin-bottom: 10px;
+    font-size: small;
+    font-weight: 800;
+  }
+  .text-1,
+  .text-2 {
+    font-size: smaller;
+    margin-bottom: 0;
+  }
+  .container-icon img {
+    width: 25px;
+    height: 25px;
+  }
+  .text-fo {
+    font-size: smaller;
+  }
+  .container-icon {
+    width: 25px;
+    height: 25px;
+  }
+  .footer {
+    margin-top: 70px;
+    width: 120px;
+    height: 20px;
+  }
+}
